@@ -10,16 +10,14 @@ Student::Student() {
     plan = 0;
 }
 
-Student::Student(std::string name){
+Student::Student(string name){
     fullname = name;
     karma = 0;
     plan = 0;
 }
 
-Student::Student(std::string name, float p, float k){
+Student::Student(string name, float p, float k){
     fullname = name;
-    //karma = 0;
-    //plan = 0;
     set_plan(plan);
     set_karma(karma);
 }
@@ -47,5 +45,5 @@ void Student::print() const {
          << "Karma: " << karma << endl
          << "Plan done: " << plan << endl
          << "Expelling probability: " << 100 * expell_probability() << "%" << endl;
-    return;
 }
+

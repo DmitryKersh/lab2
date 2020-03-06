@@ -11,10 +11,11 @@
 using std::cin;
 using std::cout;
 using std::endl;
+using std::string;
 
 class Student {
 
-    std::string fullname;
+    string fullname;
 
 protected:
     float karma;
@@ -22,8 +23,8 @@ protected:
 
 public:
     Student();
-    Student(std::string name);
-    Student(std::string name, float p, float k);
+    Student(string name);
+    Student(string name, float p, float k);
 
     void set_plan(float value);
     void set_karma(float value);
