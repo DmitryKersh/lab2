@@ -3,4 +3,4 @@ project(lab2)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(lab2 main.cpp Student.cpp Student.h Faculty.cpp Faculty.h)
+add_executable(lab2 main.cpp Student.cpp Student.h Faculty.cpp Faculty.h RealStudent.cpp RealStudent.h)

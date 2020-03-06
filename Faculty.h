@@ -13,9 +13,9 @@ using std::endl;
 using std::string;
 
 class Faculty {
-    string name;
 
 protected:
+    string name;
     float loyalty;
 
 public:

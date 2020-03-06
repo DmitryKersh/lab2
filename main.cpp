@@ -1,6 +1,10 @@
 #include <iostream>
+#include "RealStudent.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    string str;
+    float f;
+
+    cout << "Enter fullname\n";
     return 0;
 }

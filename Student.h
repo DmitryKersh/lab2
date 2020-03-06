@@ -6,7 +6,7 @@
 #define LAB2_STUDENT_H
 
 #include <string>
-#include <iostream
+#include <iostream>
 
 using std::cin;
 using std::cout;
@@ -15,9 +15,8 @@ using std::string;
 
 class Student {
 
-    string fullname;
-
 protected:
+    string fullname;
     float karma;
     float plan;
 
