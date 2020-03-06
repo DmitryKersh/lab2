@@ -10,16 +10,16 @@ Student::Student() {
     plan = 0;
 }
 
-Student::Student(string name){
+Student::Student(string& name){
     fullname = name;
     karma = 0;
     plan = 0;
 }
 
-Student::Student(string name, float p, float k){
+Student::Student(string& name, float _plan, float _karma){
     fullname = name;
-    set_plan(plan);
-    set_karma(karma);
+    set_plan(_plan);
+    set_karma(_karma);
 }
 
 void Student::set_plan(float value) {
@@ -37,7 +37,8 @@ void Student::set_karma(float value) {
 }
 
 float Student::expell_probability() const {
-    return 1 - (karma + plan);
+    if(1 - (karma + plan) > 0) return 1 - (karma + plan);
+    return 0;
 }
 
 void Student::print() const {

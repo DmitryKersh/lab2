@@ -22,8 +22,8 @@ protected:
 
 public:
     Student();
-    Student(string name);
-    Student(string name, float p, float k);
+    Student(string& name);
+    Student(string& name, float _plan, float _karma);
 
     void set_plan(float value);
     void set_karma(float value);

@@ -17,8 +17,11 @@ using std::string;
 class RealStudent : public Student, public Faculty {
 public:
     float expell_probability();
+
     RealStudent();
-    RealStudent(string _fullname, string _facname, float _karma, float _plan, float _facloyalty);
+    RealStudent(string& _fullname, string& _facname, float _karma, float _plan, float _facloyalty);
+
+    void print();
 };
 
 

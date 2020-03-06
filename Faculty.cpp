@@ -17,7 +17,7 @@ Faculty::Faculty() {
     loyalty = 0;
 }
 
-Faculty::Faculty(string _name, float _loyalty) {
+Faculty::Faculty(string& _name, float _loyalty) {
     name = _name;
     set_loyalty(_loyalty);
 }

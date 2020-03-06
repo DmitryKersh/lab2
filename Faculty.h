@@ -22,7 +22,7 @@ public:
     void set_loyalty(float value);
 
     Faculty();
-    Faculty(string _name, float _loyalty);
+    Faculty(string& _name, float _loyalty);
 
     void print() const;
 
